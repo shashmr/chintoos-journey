@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(8,5,59);
+background: radial-gradient(circle, rgba(8,5,59,1) 0%, rgba(13,13,245,1) 35%, rgba(44,219,255,1) 100%);
+}
+
+#noButton {
+    position: absolute;
+    margin-left: 150px;
+    transition: 0.5s;
+}
+
+#yesButton {
+    position: absolute;
+    margin-right: 150px;
+}
+
+.header_text {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    font-weight:bolder;
+    font-stretch: semi-expanded;
+    color: rgb(5, 0, 0);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: #0c0c0c;
+    color:color-mix(in xyz-d50, rgb(125, 35, 209) 50%, rgb(0, 225, 255) 50%);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 45px;
+    transition: background-color 0.3s ease;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 100%) and (max-height: 100%) {
+    body {
+        height: 100vh;
+    }
+
+    .header_text {
+        font-size: 20px;
+    }
+
+    img {
+        height: 60vh;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 100%) and (max-height: 100%) {
+    body {
+        height: 90vh;
+    }
+
+    .header_text {
+        font-size: 28px;
+    }
+
+    img {
+        height: 60vh;
+    }
+
+    .btn {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+}
